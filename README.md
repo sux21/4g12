@@ -19,3 +19,9 @@ Try this first:
 blastn -query ~brian/exampleForBlast.fasta -out results113.out -db /scratch/blastdb/nt_v5
 ```
 ## Method 2: BOLD
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1890991/
+
+**Follow the instruction to download the postgresql: https://www.endpointdev.com/blog/2013/06/installing-postgresql-without-root/**
+```
+
+```
