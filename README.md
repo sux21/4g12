@@ -11,7 +11,8 @@ wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.1
 md5sum -c ncbi-blast-2.14.1+-x64-linux.tar.gz.md5
 tar zxvpf ncbi-blast-2.14.1+-x64-linux.tar.gz
 
-# 
+# Download the ref_euk_rep_genomes (Eukaryotic representative genomes from NCBI RefSeq project) (describe here https://www.ncbi.nlm.nih.gov/books/NBK62345/#blast_ftp_site.The_blastdb_subdirectory)
+perl ncbi-blast-2.14.1+/bin/update_blastdb.pl --passive --decompress ref_euk_rep_genomes
 ```
 Try this first:
 ```
