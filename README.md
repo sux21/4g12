@@ -1,5 +1,6 @@
-# Species confirmation
+# Step 1: Species confirmation
 ## Method 1: NCBI
+Blast version: 2.14.1+ <br>
 Work done on info2020
 
 **Download the latest version of blast at https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html**
