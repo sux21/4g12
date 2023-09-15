@@ -3,9 +3,10 @@
 Work done in the lab
 
 ## 2. Open the Sanger sequencing files
-**Download the latest version of BioEdit at https://bioedit.software.informer.com/download/**
+**Download the latest version of UGENE at http://ugene.net/download-all.html**
 
-Version: 7.7.1 
+Version: 48.1 <br>
+Work done on macOS
 
 ## 3. Search COI sequence on databases
 Blast version: 2.14.1+ <br>
