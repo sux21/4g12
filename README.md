@@ -1,12 +1,13 @@
 # Step 1: Species confirmation
-## DNA extraction, PCR amplification and gel electrophoresis, microclean, send to Sanger sequencing
+## 1. DNA extraction, PCR amplification and gel electrophoresis, microclean, send to Sanger sequencing
 Work done in the lab
 
-## Open the Sanger sequencing files
+## 2. Open the Sanger sequencing files
 **Download the latest version of BioEdit at https://bioedit.software.informer.com/download/**
 
 Version: 7.7.1 
 
+## 3. Search COI sequence on databases
 ### Method 1: NCBI
 Blast version: 2.14.1+ <br>
 Work done on info2020
