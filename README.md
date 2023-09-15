@@ -22,19 +22,16 @@ tar zxvpf ncbi-blast-2.14.1+-x64-linux.tar.gz
 
 **Download databases**
 ```
-# Download the ref_euk_rep_genomes (Eukaryotic representative genomes from NCBI RefSeq project, https://www.ncbi.nlm.nih.gov/books/NBK62345/#blast_ftp_site.The_blastdb_subdirectory)
-perl ncbi-blast-2.14.1+/bin/update_blastdb.pl --passive --decompress ref_euk_rep_genomes
+# Download the ref_euk_rep_genomes (Eukaryotic representative genomes from NCBI RefSeq project) https://www.ncbi.nlm.nih.gov/books/NBK62345/#blast_ftp_site.The_blastdb_subdirectory)
+perl /home/xingyuan/tools/ncbi-blast-2.14.1+/bin/update_blastdb.pl --passive --decompress nt
 
-# Move downloaded database files to a new directory
-mkdir blastdb
-mv ref_euk_rep_genomes* blastdb/
-mv taxdb.* blastdb/
 ```
 
 **Search at Eukaryotic representative genomes database (https://www.ncbi.nlm.nih.gov/books/NBK62345/#blast_ftp_site.The_blastdb_subdirectory)**
 
 Try this first:
 ```
-blastn -query ~brian/exampleForBlast.fasta -out results113.out -db /scratch/blastdb/nt_v5
+~/tools/ncbi-blast-2.14.1+/bin/blastn -query bold_mylu.fasta -out blast.out -db ~/tools/blastdb/ref_euk_rep_genomes
+
 ```
 
