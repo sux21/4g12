@@ -8,6 +8,8 @@ Work done in the lab
 Version: 48.1 <br>
 Work done on macOS
 
+Citation: *Unipro UGENE: a unified bioinformatics toolkit. Konstantin Okonechnikov, Olga Golosova, Mikhail Fursov, the UGENE team. Bioinformatics 2012 28: 1166-1167. doi: 10.1093/bioinformatics/bts091*
+
 ## 3. Prepare COI sequences for BLAST search
 Work done on info2020
 
