@@ -17,20 +17,20 @@ Work done on info2020
 
 ### Reverse complement the reverse sequence
 ```bash
-/home/xingyuan/tools/seqkit seq -t DNA -pr bv232-COI-R.fasta  
+/home/xingyuan/tools/seqkit seq -t DNA -pr "$sample"-COI-R.fasta > "$sample"-COI-R.rc.fasta
 ```
 
 ### Combine forward and the reverse complement of the reverse sequences
 ```bash
-cat
+cat "$sample"-COI-F.fasta "$sample"-COI-R.rc.fasta > "$sample"-COI.aln.fasta
 ```
 
 ### Align the forward and reverse complement of the reverse sequences 
 ```bash
-/1/local/bin/clustalo -i bv232-COI.aln.fasta --outfmt=clustal
+/1/local/bin/clustalo -i "$sample"-COI.aln.fasta --outfmt=clustal > "$sample"-COI.aln
 ```
 
-### Join the forward and reverse sequences based on the alignment
+### Manually join the forward and reverse sequences into one longer sequence based on the alignment
 
 ## 4. BLAST
 Blast version: 2.14.1+ <br>
