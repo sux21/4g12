@@ -61,4 +61,11 @@ perl /home/xingyuan/tools/ncbi-blast-2.14.1+/bin/update_blastdb.pl --passive --d
 /home/xingyuan/tools/ncbi-blast-2.14.1+/bin/blastn -query "$sample"--COI.assembly.fasta -out "$sample".blast -db /home/xingyuan/tools/blastdb/nt -num_threads 6
 ```
 
-Citation: *Ratnasingham, Sujeevan, and Paul D N Hebert. “bold: The Barcode of Life Data System (http://www.barcodinglife.org).” Molecular ecology notes vol. 7,3 (2007): 355-364. doi:10.1111/j.1471-8286.2007.01678.x*
+**Search at BOLD database**
+```bash
+/home/xingyuan/tools/ncbi-blast-2.14.1+/bin/blastn  -query "$sample"--COI.assembly.fasta -out "$sample".bold -db /home/xingyuan/tools/blastdb/BOLD_Public.31-Mar-2023.fasta -num_threads 6
+```
+
+*Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), "A greedy algorithm for aligning DNA sequences", J Comput Biol 2000; 7(1-2):203-14.*
+
+*Ratnasingham, Sujeevan, and Paul D N Hebert. “bold: The Barcode of Life Data System (http://www.barcodinglife.org).” Molecular ecology notes vol. 7,3 (2007): 355-364. doi:10.1111/j.1471-8286.2007.01678.x*
