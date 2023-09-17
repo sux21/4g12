@@ -17,17 +17,17 @@ Work done on info2020
 
 ### Reverse complement the reverse sequence
 ```bash
-/home/xingyuan/tools/seqkit seq -t DNA -pr "$sample"-COI-R.fasta > "$sample"-COI-R.rc.fasta
+/home/xingyuan/tools/seqkit seq -t DNA -pr "$sample"--COI-R.fasta > "$sample"--COI-R.rc.fasta;
 ```
 
 ### Combine forward and the reverse complement of the reverse sequences
 ```bash
-cat "$sample"-COI-F.fasta "$sample"-COI-R.rc.fasta > "$sample"-COI.aln.fasta
+cat "$sample"--COI-F.fasta "$sample"--COI-R.rc.fasta > "$sample"--COI.aln.fasta;
 ```
 
 ### Align the forward and reverse complement of the reverse sequences 
 ```bash
-/1/local/bin/clustalo -i "$sample"-COI.aln.fasta --outfmt=clustal > "$sample"-COI.aln
+/1/local/bin/clustalo -i "$sample"--COI.aln.fasta --outfmt=clustal > "$sample"--COI.aln
 ```
 
 ### Manually join the forward and reverse sequences into one longer sequence based on the alignment
