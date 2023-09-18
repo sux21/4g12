@@ -63,7 +63,7 @@ perl /home/xingyuan/tools/ncbi-blast-2.14.1+/bin/update_blastdb.pl --passive --d
 
 **Search at BOLD database**
 ```bash
-/home/xingyuan/tools/ncbi-blast-2.14.1+/bin/blastn  -query "$sample"--COI.assembly.fasta -out "$sample".bold -db /home/xingyuan/tools/blastdb/BOLD_Public.31-Mar-2023.fasta -num_threads 6
+/home/xingyuan/tools/ncbi-blast-2.14.1+/bin/blastn -query "$sample"--COI.assembly.fasta -out "$sample".bold -db /home/xingyuan/tools/blastdb/BOLD_Public.31-Mar-2023.fasta -num_threads 6
 ```
 
 *Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb Miller (2000), "A greedy algorithm for aligning DNA sequences", J Comput Biol 2000; 7(1-2):203-14.*
